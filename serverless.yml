@@ -1,4 +1,4 @@
-service: openai-slack
+service: openai-line-messaging
 
 plugins:
   - serverless-esbuild
@@ -6,7 +6,7 @@ plugins:
 
 custom:
   serverless-layers:
-    layersDeploymentBucket: openai-slack-dev-lambda-layers-deploy
+    layersDeploymentBucket: openai-line-messaging-dev-lambda-layers-deploy
 
 provider:
   name: aws

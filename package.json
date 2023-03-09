@@ -1,14 +1,14 @@
 {
-  "name": "openai-slack",
+  "name": "openai-line-messaging",
   "version": "1.0.0",
   "description": "",
   "author": "jiyuujin <jiyuujinunite@gmail.com>",
   "private": true,
   "scripts": {},
   "dependencies": {
+    "@line/bot-sdk": "7.5.2",
     "node-fetch": "3.3.0",
-    "openai": "3.2.1",
-    "query-string": "8.1.0"
+    "openai": "3.2.1"
   },
   "devDependencies": {
     "@serverless/typescript": "3.27.0",

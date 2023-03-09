@@ -1,4 +1,4 @@
-# OpenAI + Slack
+# OpenAI + LINE Messaging
 
 For detailed instructions, please refer to the [documentation](https://www.serverless.com/framework/docs/providers/aws/).
 
