@@ -1,0 +1,22 @@
+service: openai-slack
+
+plugins:
+  - serverless-esbuild
+  - serverless-layers
+
+custom:
+  serverless-layers:
+    layersDeploymentBucket: openai-slack-dev-lambda-layers-deploy
+
+provider:
+  name: aws
+  region: ap-northeast-1
+  runtime: nodejs16.x
+
+functions:
+  hello:
+    handler: handler.hello
+    events:
+      - http:
+          path: hello
+          method: post
