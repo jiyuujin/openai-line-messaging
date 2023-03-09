@@ -4,6 +4,7 @@ emoji: "🐍"
 type: "tech"
 topics: ["chatgpt", "line", "linebot", "openai", "aws"]
 published: true
+publication_name: "line_dc"
 ---
 
 ## ChatGPT を Slack へ組み込む
