@@ -7,8 +7,8 @@ interface Message {
   content: string
 }
 
-const OPENAPI_CHAT_COMPLETIONS_API = 'https://api.openai.com/v1/chat/completions'
-const OPENAPI_SECRET = ''
+const OPENAI_CHAT_COMPLETIONS_API = 'https://api.openai.com/v1/chat/completions'
+const OPENAI_SECRET = ''
 const LINE_SECRET = ''
 
 export const chatCompletions = async (messages: Message[]): Promise<Message | undefined> => {
@@ -17,11 +17,11 @@ export const chatCompletions = async (messages: Message[]): Promise<Message | un
     messages,
   })
 
-  const res = await fetch(OPENAPI_CHAT_COMPLETIONS_API, {
+  const res = await fetch(OPENAI_CHAT_COMPLETIONS_API, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
-      Authorization: `Bearer ${OPENAPI_SECRET}`,
+      Authorization: `Bearer ${OPENAI_SECRET}`,
     },
     body,
   })
