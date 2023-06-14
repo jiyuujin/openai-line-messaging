@@ -11,8 +11,8 @@ const OPENAI_CHAT_COMPLETIONS_API = 'https://api.openai.com/v1/chat/completions'
 const OPENAI_SECRET = ''
 const LINE_SECRET = ''
 
-// Model: gpt-3.5-turbo
-const OPENAI_MODEL = 'gpt-3.5-turbo'
+// Model: gpt-3.5-turbo-0613, gpt-3.5-turbo
+const OPENAI_MODEL = 'gpt-3.5-turbo-0613'
 
 export const chatCompletions = async (messages: Message[]): Promise<Message | undefined> => {
   const body = JSON.stringify({
